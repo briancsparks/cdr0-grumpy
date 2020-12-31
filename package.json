@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "author": "briancsparks@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "ava": "^3.14.0"
+  }
 }
