@@ -27,7 +27,7 @@ module.exports = getUnpublishedPolyrepo;
 
 
 // --------------------------------------------------------------------------------------------------------------------
-function getUnpublishedPolyrepo(dirname) {
+function getUnpublishedPolyrepo(dirname, config ={}) {
   // Returns a function that is equivalent to the caller doing 'require("@cdr0/polyrepo")', but prefers a local copy
 
   require('dotenv').config();
@@ -41,7 +41,7 @@ function getUnpublishedPolyrepo(dirname) {
 
     const mkPolyrepoRequire = require(localPath);
     if (mkPolyrepoRequire) {
-      const polyrepoRequire = mkPolyrepoRequire(dirname);
+      const polyrepoRequire = mkPolyrepoRequire(dirname, config);
       if (polyrepoRequire) {
         return polyrepoRequire;
       }

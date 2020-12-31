@@ -10,6 +10,7 @@
   "author": "briancsparks@gmail.com",
   "license": "MIT",
   "dependencies": {
+    "@cdr0/sg": "^1.0.2",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
